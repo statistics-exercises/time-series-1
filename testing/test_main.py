@@ -14,8 +14,8 @@ from main import *
 class UnitTests(unittest.TestCase) :
     def test_lam(self) :
         inputs, var = [], []
-        for j in range(1,20) : 
-           lam=j*20
+        for j in range(1,5) : 
+           lam=j
            inputs.append((lam,))
            myvar1 = randomvar( 1/lam, variance=1/(lam*lam), vmin=0, isinteger=False )
            var.append(myvar1)
