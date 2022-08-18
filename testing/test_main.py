@@ -17,6 +17,6 @@ class UnitTests(unittest.TestCase) :
         for j in range(1,5) : 
            lam=j
            inputs.append((lam,))
-           myvar1 = randomvar( 1/lam, variance=1/(lam*lam), vmin=0, isinteger=False )
+           myvar1 = randomvar( 1/lam, variance=1/(lam*lam), vmin=0, isinteger=False, nsamples=100 )
            var.append(myvar1)
         assert( check_func("exponential", inputs, var) )
